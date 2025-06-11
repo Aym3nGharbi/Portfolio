@@ -363,6 +363,7 @@ a {
     font-weight: 400;
     margin: 5px;
 }
+
 /* Projects End */
 
 /* Contact Start */
@@ -403,6 +404,55 @@ a {
 }
 
 /* Footer End */
+
+/* Smooth scroll active nav link */
+nav ul li a.active {
+    color: #00bcd4;
+    /* or your theme color */
+    font-weight: bold;
+}
+
+/* Reveal animation */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    filter: blur(5px);
+    transition: all 0.6s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+}
+
+/* Style du lien actif */
+nav ul li a.active {
+    color: var(--primary-color);
+    font-weight: bold;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* Style du bouton retour en haut */
+#scrollToTop {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    padding: 10px 15px;
+    background-color: var(--gray);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    z-index: 999;
+    transition: background-color 0.3s;
+}
+
+#scrollToTop:hover {
+    background-color: var(--primary-color);
+}
+
 
 /* Tblet Responsive */
 @media(max-width: 768px) {
