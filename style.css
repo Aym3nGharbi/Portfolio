@@ -13,10 +13,6 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     font-family: "Poppins", sans-serif;
 }
@@ -405,13 +401,6 @@ a {
 
 /* Footer End */
 
-/* Smooth scroll active nav link */
-nav ul li a.active {
-    color: #00bcd4;
-    /* or your theme color */
-    font-weight: bold;
-}
-
 /* Reveal animation */
 .reveal {
     opacity: 0;
@@ -428,7 +417,6 @@ nav ul li a.active {
 
 /* Style du lien actif */
 nav ul li a.active {
-    color: var(--primary-color);
     font-weight: bold;
     border-bottom: 2px solid var(--primary-color);
 }
