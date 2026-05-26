@@ -4,45 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aymen Gharbi</title>
-    <!-- Fontawesome -->
+    <title>Aymen Gharbi — Cybersecurity & Cloud</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Style -->
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-    <!-- Favicon -->
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 </head>
 
 <body>
+
+    <!-- Animated background grid -->
+    <div class="bg-grid"></div>
+
     <!-- Header Start -->
     <header id="home">
         <div class="navbar">
             <nav>
-                <a href="#home" id="logo" class="scroll-link">Aymen Gharbi</a>
+                <a href="#home" id="logo" class="scroll-link">AG<span class="accent">_</span></a>
                 <ul>
                     <li><a href="#home" class="scroll-link">Home</a></li>
                     <li><a href="#about" class="scroll-link">About</a></li>
                     <li><a href="#skills" class="scroll-link">Skills</a></li>
+                    <li><a href="#certifications" class="scroll-link">Certifications</a></li>
                     <li><a href="#projects" class="scroll-link">Projects</a></li>
                     <li><a href="#contact" class="scroll-link">Contact</a></li>
                 </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span><span></span><span></span>
+                </div>
             </nav>
         </div>
+
         <div class="header-content">
             <div class="content-text">
-                <p><span class="text-primary">Hi There, I'm</span></p>
-                <h1>Aymen Gharbi</h1>
-                <p class="title">Cybersecurity & Cloud Engineering Student</p>
+                <p class="greeting"><span class="mono">&gt; Hello, World.</span></p>
+                <h1>Aymen<br><span class="accent-name">Gharbi</span></h1>
+                <p class="title mono">Cybersecurity & Cloud Engineering Student</p>
+                <p class="subtitle">Building secure systems. Automating infrastructure.<br>Applying AI to real security challenges.</p>
                 <div class="social">
-                    <a href="https://www.linkedin.com/in/gharbi-aymen/" target="_blank"><i
-                            class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/Aym3nGharbi" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/gharbi-aymen/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Aym3nGharbi" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="mailto:agharbi326@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
                 </div>
-                <a href="#about" class="btn-primary scroll-link">About Me <i class="fa-solid fa-circle-down"></i></a>
+                <div class="header-btns">
+                    <a href="#projects" class="btn-primary scroll-link">View Projects <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn-outline scroll-link">Contact Me</a>
+                </div>
             </div>
-            <img src="./img/PortfoliPhoto.png" alt="Aymen Gharbi">
+            <div class="header-visual">
+                <div class="img-frame">
+                    <img src="./img/PortfoliPhoto.png" alt="Aymen Gharbi">
+                    <div class="img-decoration"></div>
+                </div>
+                <div class="floating-tag tag-1 mono">&lt;DevSecOps /&gt;</div>
+                <div class="floating-tag tag-2 mono">$ terraform apply</div>
+                <div class="floating-tag tag-3 mono">OWASP ✓</div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span class="mono">scroll</span>
+            <div class="scroll-line"></div>
         </div>
     </header>
     <!-- Header End -->
@@ -51,24 +75,40 @@
         <!-- About Start -->
         <section id="about" class="reveal">
             <div class="container">
-                <h2>About Me</h2>
-                <hr>
+                <div class="section-label mono">&gt; about_me</div>
+                <h2>About <span class="accent">Me</span></h2>
                 <div class="about-content">
                     <div class="col-1">
-                        <h3>I'm <span class="text-primary">Aymen Gharbi,</span> a Telecom Engineering Student</h3>
-                        <p>I am a Telecommunications Engineering student at ENET'Com Sfax, passionate about
-                            cybersecurity, network security, and secure cloud infrastructure. I combine a solid
-                            theoretical foundation with hands-on experience through real projects in cryptography,
-                            intrusion detection, and cloud architecture.</p>
-                        <p>My goal is to contribute to the protection of information systems by applying robust,
-                            maintainable solutions that follow security best practices — from secure cloud deployments
-                            with Terraform and Azure to offensive security testing and AI-based intrusion detection.</p>
+                        <h3>I'm <span class="accent">Aymen Gharbi</span>,<br>Telecom Engineer & Security Enthusiast</h3>
+                        <p>I'm a Telecom Engineering student at <strong>ENET'Com Sfax</strong>, passionate about cybersecurity, cloud infrastructure, and network security. I enjoy building secure systems, automating infrastructure as code, and applying AI to real-world security challenges.</p>
+                        <p>From deploying hardened Azure infrastructures with Terraform to developing ML-based intrusion detection systems, I constantly look for ways to bridge engineering and security. I'm actively seeking a <strong>DevSecOps internship</strong> to grow in cloud-native security environments.</p>
+                        <div class="about-tags">
+                            <span class="tag mono">DevSecOps</span>
+                            <span class="tag mono">Cloud Security</span>
+                            <span class="tag mono">Network Security</span>
+                            <span class="tag mono">AI/ML</span>
+                            <span class="tag mono">IaC</span>
+                        </div>
                     </div>
                     <div class="col-2">
-                        <p><b>Email:</b> agharbi326@gmail.com</p>
-                        <p><b>Place:</b> Sousse, Tunisia</p>
-                        <p><b>Degree:</b> Telecom Engineering (ENET'Com Sfax)</p>
-                        <p><b>Certifications:</b> CCNA 1 & CCNA 2</p>
+                        <div class="info-card">
+                            <div class="info-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Sousse, Tunisia</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>agharbi326@gmail.com</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <span>ENET'Com Sfax — Telecom Eng.</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fa-brands fa-github"></i>
+                                <span>github.com/Aym3nGharbi</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -78,96 +118,262 @@
         <!-- Skills Start -->
         <section id="skills" class="reveal">
             <div class="container">
-                <h2>
-                    <i class="fa-solid fa-shield-halved"></i> Skills &amp; <span class="text-primary">Abilities</span>
-                </h2>
-                <hr>
-                <div class="skills-content">
-                    <div class="row">
-                        <div class="item">
-                            <img src="./img/fylo.png" alt="Azure">
-                            <p>Azure</p>
-                        </div>
-                        <div class="item">
-                            <img src="./img/javascript.png" alt="Terraform">
-                            <p>Terraform</p>
-                        </div>
-                        <div class="item">
-                            <img src="./img/python.png" alt="Python">
-                            <p>Python</p>
-                        </div>
-                        <div class="item">
-                            <img src="./img/c.png" alt="C">
-                            <p>C</p>
-                        </div>
-                        <div class="item">
-                            <img src="./img/dotnet.png" alt=".NET / C#">
-                            <p>.NET / C#</p>
-                        </div>
-                        <div class="item">
-                            <img src="./img/javascript.png" alt="Angular">
-                            <p>Angular</p>
-                        </div>
-                        <div class="item">
-                            <img src="./img/github.png" alt="GitHub Actions">
-                            <p>GitHub Actions</p>
-                        </div>
-                        <div class="item">
-                            <img src="./img/sql.png" alt="SQL">
-                            <p>SQL</p>
-                        </div>
+                <div class="section-label mono">&gt; skills</div>
+                <h2>Skills & <span class="accent">Abilities</span></h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <img src="./img/python.png" alt="Python">
+                        <p>Python</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="./img/c.png" alt="C">
+                        <p>C</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="./img/terraform-software-icon.png" alt="Terraform">
+                        <p>Terraform</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="./img/Microsoft-Azure.png" alt="Azure">
+                        <p>Azure</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="./img/docker.png" alt="Docker">
+                        <p>Docker</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="./img/linux.png" alt="Linux">
+                        <p>Linux</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="./img/github.png" alt="Git/GitHub">
+                        <p>Git / GitHub</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="./img/sql.png" alt="SQL">
+                        <p>SQL</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="./img/learning-machine-ai-icon.png" alt="Machine Learning">
+                        <p>Machine Learning</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="./img/networking.png" alt="Networking">
+                        <p>Networking</p>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Skills End -->
 
+        <!-- Certifications Start -->
+        <section id="certifications" class="reveal">
+            <div class="container">
+                <div class="section-label mono">&gt; certifications</div>
+                <h2>My <span class="accent">Certifications</span></h2>
+                <div class="certs-grid">
+
+                    <div class="cert-card">
+                        <div class="cert-badge">
+                            <img src="https://images.credly.com/images/70d71df5-f3dc-4380-9b9d-f22513a70417/linkedin_thumb_CCNAITN__1_.png"
+                                alt="CCNA 1 Badge">
+                        </div>
+                        <div class="cert-info">
+                            <div class="cert-issuer mono">Cisco · May 2025</div>
+                            <h3>CCNA: Introduction to Networks</h3>
+                            <p>IP addressing, Ethernet & data link protocols, switch/router configuration, and end-to-end connectivity. Completed 54 labs with 14 hours of hands-on practice using Cisco hardware and Packet Tracer.</p>
+                            <div class="cert-skills">
+                                <span class="tag mono">IP Addressing</span>
+                                <span class="tag mono">Ethernet</span>
+                                <span class="tag mono">Routing</span>
+                                <span class="tag mono">Packet Tracer</span>
+                                <span class="tag mono">Subnetting</span>
+                            </div>
+                            <a href="https://www.credly.com/badges/7c03c1b6-bf8d-4311-91f7-f569ea4a2c0e/public_url"
+                                target="_blank" class="btn-primary">View Badge <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-badge">
+                            <img src="https://images.credly.com/images/f4ccdba9-dd65-4349-baad-8f05df116443/linkedin_thumb_CCNASRWE__1_.png"
+                                alt="CCNA 2 Badge">
+                        </div>
+                        <div class="cert-info">
+                            <div class="cert-issuer mono">Cisco · May 2026</div>
+                            <h3>CCNA: Switching, Routing & Wireless Essentials</h3>
+                            <p>Switching operations, VLAN configuration, wireless LAN security best practices, redundancy protocols, and advanced troubleshooting. Completed 45 activities with 21 hours of hands-on labs.</p>
+                            <div class="cert-skills">
+                                <span class="tag mono">VLANs</span>
+                                <span class="tag mono">STP</span>
+                                <span class="tag mono">OSPF</span>
+                                <span class="tag mono">Wireless Security</span>
+                                <span class="tag mono">WPA2</span>
+                            </div>
+                            <a href="https://www.credly.com/badges/90685e40-1aa6-4b7e-82e4-edffe37c26d7/public_url"
+                                target="_blank" class="btn-primary">View Badge <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Certifications End -->
+
         <!-- Projects Start -->
         <section id="projects" class="reveal">
             <div class="container">
-                <h2>
-                    <i class="fa-solid fa-laptop-code"></i> My <span class="text-primary">Projects</span>
-                </h2>
-                <hr>
-                <div class="row">
-                    <div class="item">
-                        <img src="./img/cryptographie.png" alt="AES-CryptoProject">
-                        <div class="item-content">
+                <div class="section-label mono">&gt; projects</div>
+                <h2>My <span class="accent">Projects</span></h2>
+                <div class="projects-grid">
+
+                    <div class="project-card featured">
+                        <div class="project-img">
+                            <img src="./img/pfa.png" alt="PFA Infrastructure">
+                            <div class="project-overlay">
+                                <span class="mono">DevSecOps · Cloud · IaC</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-number mono">01</div>
+                            <h3>PFA — Secure Azure Infrastructure</h3>
+                            <p>Deployed a hardened Azure infrastructure with Terraform: WAF v2 (OWASP rules), Azure Firewall, Point-to-Site VPN, Key Vault, and automated offensive testing via GitHub Actions CI/CD.</p>
+                            <div class="project-tags">
+                                <span class="tag mono">Terraform</span>
+                                <span class="tag mono">Azure</span>
+                                <span class="tag mono">WAF</span>
+                                <span class="tag mono">DevSecOps</span>
+                                <span class="tag mono">GitHub Actions</span>
+                            </div>
+                            <a href="https://github.com/Aym3nGharbi/pfa-infrastructure" target="_blank" class="btn-primary">
+                                <i class="fa-brands fa-github"></i> Source Code
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="./img/ids.png" alt="IDS AI">
+                            <div class="project-overlay">
+                                <span class="mono">ML · Security · Python</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-number mono">02</div>
+                            <h3>IDS-AI — Network Intrusion Detection</h3>
+                            <p>ML-based network intrusion detection system trained on TII-SSRC-23 dataset (8.6M flows, 32 attack classes). Random Forest & XGBoost achieving 99.79% accuracy.</p>
+                            <div class="project-tags">
+                                <span class="tag mono">Python</span>
+                                <span class="tag mono">XGBoost</span>
+                                <span class="tag mono">Scikit-learn</span>
+                                <span class="tag mono">IDS</span>
+                            </div>
+                            <a href="https://github.com/Aym3nGharbi/IDS-AI-Intrusion-Detection" target="_blank" class="btn-primary">
+                                <i class="fa-brands fa-github"></i> Source Code
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="./img/Rx.png" alt="5G Network Monitoring">
+                            <div class="project-overlay">
+                                <span class="mono">5G · QoS · Monitoring</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-number mono">03</div>
+                            <h3>5G/4G Network Monitoring & QoS Prediction</h3>
+                            <p>Mobile network monitoring system with QoS prediction capabilities, analyzing performance metrics across 5G and 4G network environments.</p>
+                            <div class="project-tags">
+                                <span class="tag mono">5G</span>
+                                <span class="tag mono">QoS</span>
+                                <span class="tag mono">Networking</span>
+                                <span class="tag mono">Python</span>
+                            </div>
+                            <a href="https://github.com/Aym3nGharbi/projet-reseau-mobile" target="_blank" class="btn-primary">
+                                <i class="fa-brands fa-github"></i> Source Code
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="./img/cryptographie.png" alt="AES Crypto">
+                            <div class="project-overlay">
+                                <span class="mono">Cryptography · C · AES</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-number mono">04</div>
                             <h3>AES-CryptoProject</h3>
-                            <p class="project-desc">AES-128 CBC implementation from scratch in C with PKCS#7 padding, Caesar cipher & frequency analysis.</p>
-                            <a href="https://github.com/Aym3nGharbi/AES-CryptoProject" target="_blank"
-                                class="btn-primary">Source Code</a>
+                            <p>AES-128 encryption implemented from scratch in C with CBC mode and PKCS#7 padding. Also includes Caesar cipher and frequency analysis.</p>
+                            <div class="project-tags">
+                                <span class="tag mono">C</span>
+                                <span class="tag mono">AES-128</span>
+                                <span class="tag mono">CBC</span>
+                                <span class="tag mono">Cryptography</span>
+                            </div>
+                            <a href="https://github.com/Aym3nGharbi/AES-CryptoProject" target="_blank" class="btn-primary">
+                                <i class="fa-brands fa-github"></i> Source Code
+                            </a>
                         </div>
                     </div>
-                    <div class="item">
-                        <img src="./img/RecipAI.jpeg" alt="IDS-AI">
-                        <div class="item-content">
-                            <h3>IDS-AI – Network Intrusion Detection</h3>
-                            <p class="project-desc">ML-based IDS trained on TII-SSRC-23 (8.6M flows, 32 attack classes). Random Forest 99.73% & XGBoost 99.79% accuracy.</p>
-                            <a href="https://github.com/Aym3nGharbi/IDS-AI-Intrusion-Detection" target="_blank"
-                                class="btn-primary">Source Code</a>
+
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="./img/password.png" alt="Password Generator">
+                            <div class="project-overlay">
+                                <span class="mono">JS · Security Tool</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <img src="./img/Tic Tac Toe.png" alt="PFA Infrastructure Azure">
-                        <div class="item-content">
-                            <h3>PFA – Secure Azure Infrastructure</h3>
-                            <p class="project-desc">Modular Azure infra with Terraform: WAF, Firewall, VPN OpenVPN, Key Vault, CI/CD GitHub Actions & offensive security tests.</p>
-                            <a href="https://github.com/Aym3nGharbi/pfa-infrastructure" target="_blank"
-                                class="btn-primary">Source Code</a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="./img/password.png" alt="Password-Generator">
-                        <div class="item-content">
+                        <div class="project-content">
+                            <div class="project-number mono">05</div>
                             <h3>Password Generator</h3>
-                            <p class="project-desc">Secure password generator web app built with HTML, CSS & JavaScript.</p>
-                            <a href="https://aym3ngharbi.github.io/Password-Generator/" target="_blank"
-                                class="btn-primary">Visit Website</a>
-                            <a href="https://github.com/Aym3nGharbi/Password-Generator" target="_blank"
-                                class="btn-primary">Source Code</a>
+                            <p>A secure password generator with customizable length and character sets. Clean UI built with vanilla JavaScript.</p>
+                            <div class="project-tags">
+                                <span class="tag mono">JavaScript</span>
+                                <span class="tag mono">Security</span>
+                                <span class="tag mono">HTML/CSS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://aym3ngharbi.github.io/Password-Generator/" target="_blank" class="btn-outline">
+                                    <i class="fa-solid fa-globe"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/Aym3nGharbi/Password-Generator" target="_blank" class="btn-primary">
+                                    <i class="fa-brands fa-github"></i> Source Code
+                                </a>
+                            </div>
                         </div>
                     </div>
+
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="./img/RecipAI.jpeg" alt="RecipAI">
+                            <div class="project-overlay">
+                                <span class="mono">React · AI · API</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-number mono">06</div>
+                            <h3>RecipAI</h3>
+                            <p>AI-powered recipe generator built with React. Users input ingredients and get smart recipe suggestions powered by an AI API.</p>
+                            <div class="project-tags">
+                                <span class="tag mono">React</span>
+                                <span class="tag mono">AI</span>
+                                <span class="tag mono">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://recipai-aymen.netlify.app/" target="_blank" class="btn-outline">
+                                    <i class="fa-solid fa-globe"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/Aym3nGharbi/RecipAI" target="_blank" class="btn-primary">
+                                    <i class="fa-brands fa-github"></i> Source Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -176,15 +382,38 @@
         <!-- Contact Start -->
         <section id="contact" class="reveal">
             <div class="container">
-                <h2><i class="fa-solid fa-headset"></i> Get In <span class="text-primary">Touch</span></h2>
-                <hr>
-                <div class="row">
-                    <img src="./img/contact.png" alt="Get In Touch">
+                <div class="section-label mono">&gt; contact</div>
+                <h2>Get In <span class="accent">Touch</span></h2>
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h3>Let's work together</h3>
+                        <p>I'm currently looking for internship opportunities in cybersecurity, DevSecOps, or cloud infrastructure. Feel free to reach out!</p>
+                        <div class="contact-links">
+                            <a href="mailto:agharbi326@gmail.com">
+                                <i class="fa-solid fa-envelope"></i>
+                                agharbi326@gmail.com
+                            </a>
+                            <a href="https://www.linkedin.com/in/gharbi-aymen/" target="_blank">
+                                <i class="fa-brands fa-linkedin"></i>
+                                linkedin.com/in/gharbi-aymen
+                            </a>
+                            <a href="https://github.com/Aym3nGharbi" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                                github.com/Aym3nGharbi
+                            </a>
+                        </div>
+                    </div>
                     <form action="https://formsubmit.co/agharbi326@gmail.com" method="POST">
-                        <input type="text" name="Name" id="Name" placeholder="Name" required>
-                        <input type="email" name="Email" id="Email" placeholder="Email" required>
-                        <textarea name="Message" id="Message" cols="30" rows="10" placeholder="Message"></textarea>
-                        <button type="submit" class="btn-primary">Send</button>
+                        <div class="form-group">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message <i class="fa-solid fa-paper-plane"></i></button>
                     </form>
                 </div>
             </div>
@@ -194,12 +423,90 @@
 
     <!-- Footer Start -->
     <footer id="footer">
-        <p>&copy; 2025 | All rights reserved</p>
+        <div class="footer-content">
+            <span class="mono">AG<span class="accent">_</span></span>
+            <p>&copy; 2026 Aymen Gharbi — All rights reserved</p>
+            <div class="footer-social">
+                <a href="https://github.com/Aym3nGharbi" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/gharbi-aymen/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
     </footer>
     <!-- Footer End -->
 
-    <button id="scrollToTop">↑</button>
-    <script src="./script.js"></script>
-</body>
+    <button id="scrollToTop" aria-label="Scroll to top">↑</button>
 
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('.scroll-link').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Active nav link
+        const navLinks = document.querySelectorAll("nav ul li a");
+        window.addEventListener("scroll", () => {
+            const fromTop = window.scrollY + 80;
+            navLinks.forEach(link => {
+                const section = document.querySelector(link.getAttribute('href'));
+                if (section && section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
+                    link.classList.add("active");
+                } else {
+                    link.classList.remove("active");
+                }
+            });
+        });
+
+        // Reveal on scroll
+        const reveals = document.querySelectorAll(".reveal");
+        function handleScroll() {
+            reveals.forEach(el => {
+                const top = el.getBoundingClientRect().top;
+                const bottom = el.getBoundingClientRect().bottom;
+                if (top < window.innerHeight && bottom > 0) {
+                    el.classList.add("active");
+                }
+            });
+        }
+        window.addEventListener("scroll", handleScroll);
+        window.addEventListener("load", handleScroll);
+
+        // Scroll to top
+        const scrollBtn = document.getElementById("scrollToTop");
+        window.addEventListener("scroll", () => {
+            scrollBtn.style.display = window.scrollY > 300 ? "block" : "none";
+        });
+        scrollBtn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+
+        // Hamburger menu
+        const hamburger = document.getElementById('hamburger');
+        const navUl = document.querySelector('nav ul');
+        hamburger.addEventListener('click', () => {
+            navUl.classList.toggle('open');
+            hamburger.classList.toggle('active');
+        });
+        document.querySelectorAll('nav ul li a').forEach(link => {
+            link.addEventListener('click', () => {
+                navUl.classList.remove('open');
+                hamburger.classList.remove('active');
+            });
+        });
+
+        // Typing effect for greeting
+        const greetingEl = document.querySelector('.greeting .mono');
+        const text = '> Hello, World.';
+        greetingEl.textContent = '';
+        let i = 0;
+        function type() {
+            if (i < text.length) {
+                greetingEl.textContent += text[i++];
+                setTimeout(type, 60);
+            }
+        }
+        window.addEventListener('load', () => setTimeout(type, 400));
+    </script>
+</body>
 </html>
