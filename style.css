@@ -152,10 +152,9 @@ a {
 
 /* Header End */
 
-/* About-Start */
+/* Sections padding & titles */
 #about,
 #skills,
-#services,
 #projects,
 #contact {
     padding: 6rem 0;
@@ -163,7 +162,6 @@ a {
 
 #about h2,
 #skills h2,
-#services h2,
 #projects h2,
 #contact h2 {
     text-align: center;
@@ -175,7 +173,6 @@ a {
 
 #about hr,
 #skills hr,
-#services hr,
 #projects hr,
 #contact hr {
     width: 120px;
@@ -185,6 +182,7 @@ a {
     margin: 5px auto 0;
 }
 
+/* About Start */
 #about .about-content {
     margin-top: 4rem;
     display: grid;
@@ -211,7 +209,7 @@ a {
     border-bottom: 1px solid #ddd;
 }
 
-/* About-End */
+/* About End */
 
 /* Skills Start */
 #skills {
@@ -265,46 +263,7 @@ a {
 
 /* Skills End */
 
-/* Services Start */
-#services,
-#contact {
-    background-color: #00f4ab0c;
-}
-
-#services .row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: 4rem;
-    text-align: center;
-    column-gap: 2rem;
-    row-gap: 4rem;
-}
-
-#services .row .item {
-    background-color: #fff;
-    padding: 30px 15px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-}
-
-#services .row .item {
-    margin: 15px 0;
-    color: var(--primary-color);
-    transition: all 0.3s ease;
-}
-
-#services .row .item:hover {
-    transform: scale(1.04);
-}
-
-#services .row img {
-    max-height: 80px;
-    margin: 10px 0;
-}
-
-/* Services End */
-
-/* projects Start */
+/* Projects Start */
 #projects {
     background-color: var(--primary-color);
 }
@@ -331,10 +290,10 @@ a {
     transform: scale(1.03);
 }
 
-
 #projects .item img {
     width: 100%;
     height: 200px;
+    object-fit: cover;
 }
 
 #projects .row .item .item-content {
@@ -345,13 +304,17 @@ a {
 }
 
 #projects .row .item .item-content h3 {
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    flex-grow: 1;
-    justify-content: space-between;
+    padding: 0.5rem;
+    color: var(--primary-color);
+    font-size: 15px;
+}
 
+#projects .row .item .item-content .project-desc {
+    font-size: 12px;
+    color: var(--gray);
+    line-height: 1.6;
+    margin: 8px 0 14px;
+    flex-grow: 1;
 }
 
 #projects .row .item .item-content a {
@@ -363,6 +326,11 @@ a {
 /* Projects End */
 
 /* Contact Start */
+#contact,
+#about {
+    background-color: #00f4ab0c;
+}
+
 #contact .row {
     margin: 4rem;
     display: grid;
@@ -441,8 +409,7 @@ nav ul li a.active {
     background-color: var(--primary-color);
 }
 
-
-/* Tblet Responsive */
+/* Tablet Responsive */
 @media(max-width: 768px) {
     #home .navbar nav {
         display: block;
@@ -482,7 +449,6 @@ nav ul li a.active {
     }
 
     #skills .skills-content .row,
-    #services .row,
     #projects .row {
         grid-template-columns: 1fr 1fr;
     }
@@ -493,7 +459,7 @@ nav ul li a.active {
     }
 }
 
-/* Mobile responsive */
+/* Mobile Responsive */
 @media(max-width: 528px) {
     #home .header-content h1 {
         font-size: 35px;
@@ -506,7 +472,6 @@ nav ul li a.active {
 
     #about h2,
     #skills h2,
-    #services h2,
     #projects h2,
     #contact h2 {
         font-size: 30px;
@@ -517,7 +482,6 @@ nav ul li a.active {
     }
 
     #skills .skills-content .row,
-    #services .row,
     #projects .row {
         grid-template-columns: 1fr;
     }
